@@ -26,11 +26,11 @@ El programa nos perminte realizar diferntes opciones
   ## Sumar todos los valores de la matriz
   ![sumar todos los valroes de la matriz](https://raw.githubusercontent.com/kasper1805/micalcu/main/sumar%20todos%20lo%20valores%20de%20la%20matriz.png)
   ## Restar todos los valores de la matriz
-  ![restablecer todos los valores de la matriz](https://raw.githubusercontent.com/kasper1805/micalcu/main/restar%20todos%20los%20valores%20de%20la%20matriz.png)
+  ![restar todos los valores de la matriz](https://raw.githubusercontent.com/kasper1805/micalcu/main/restar%20todos%20los%20valores%20de%20la%20matriz.png)
   ## Suma de matrices
   ![suma de matrices](https://raw.githubusercontent.com/kasper1805/micalcu/main/suma%20de%20matrices.png)
   ## Resta de matrices
-  ![reto de matrices](https://raw.githubusercontent.com/kasper1805/micalcu/main/resta%20de%20matrices.png)
+  ![restar de matrices](https://raw.githubusercontent.com/kasper1805/micalcu/main/resta%20de%20matrices.png)
   ## Triangulo con numeros
   ![triangulo con numeros](https://raw.githubusercontent.com/kasper1805/micalcu/main/triangulo%20con%20numeros.png)
   ## Cuadrado con asteriscos
