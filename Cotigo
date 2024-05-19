@@ -1,0 +1,203 @@
+```
+Algoritmo CALCULADORA
+	Definir n1, n2, opc, a, b, f, c, i, j, matriz, matriza, matrizb, matrizr, altura Como Entero
+	Repetir
+		Escribir "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+		Escribir "Seleccione una de las siguientes opciones"
+		Escribir "1-Suma"
+		Escribir "2-Resta"
+		Escribir "3-Multiplicacion"
+		Escribir "4-Division"
+		Escribir "5-Sumar todos los valores de la matriz"
+		Escribir "6-Restar todos los valores de la matriz"
+		Escribir "7-Suma de matrices"
+		Escribir "8-Resta de matrices"
+		Escribir "9-Triangulo con numeros"
+		Escribir "10-Rectangulo con asteriscos"
+		Escribir "11-Salir"
+		Escribir "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+			Leer opc;
+		Segun opc Hacer
+			1: Limpiar Pantalla
+				escribir "Ingresa el primer numero"
+				Leer n1;
+				Escribir "Ingresa el segundo numero"
+				Leer n2;
+				Escribir "El resultado de la suma es: ", (n1+n2);
+			2: Limpiar Pantalla
+				escribir "Ingresa el primer numero"
+				Leer n1;
+				Escribir "Ingresa el segundo numero"
+				Leer n2;
+				Escribir "El resultado de la resta es: ", (n1-n2);
+			3: Limpiar Pantalla
+				escribir "Ingresa el primer numero"
+				Leer n1;
+				Escribir "Ingresa el segundo numero"
+				Leer n2;
+				Escribir "El resultado de la multiplicacion es: ", (n1*n2);
+			4: Limpiar Pantalla
+				escribir "Ingresa el primer numero"
+				Leer n1;
+				Escribir "Ingresa el segundo numero"
+				Leer n2;
+				Escribir "El resultado de la division es: ", (n1/n2);
+			5: Limpiar Pantalla
+				escribir "Ingresa el numero de filas de la matriz"
+				Leer f;
+				Escribir "Ingresa el numero de columnas de la matriz"
+				Leer c;
+				Dimension matriz[f,c]
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						Escribir "Ingresa un  numero en la fila " ,a, " columna " b;
+						Leer matriz(a,b);
+					FinPara
+				FinPara
+				suma=0
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						suma = suma + matriz(a,b);
+					FinPara
+				FinPara
+				Escribir "La suma para los elementos de la matriz es ", suma;
+			6: Limpiar Pantalla
+				escribir "Ingresa el numero de filas de la matriz"
+				Leer f;
+				Escribir "Ingresa el numero de columnas de la matriz"
+				Leer c;
+				Dimension matriz[f,c]
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						Escribir "Ingresa un  numero en la fila " ,a, " columna " b;
+						Leer matriz(a,b);
+					FinPara
+				FinPara
+				resta=0
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						resta = resta - matriz(a,b);
+					FinPara
+				FinPara
+				Escribir "La resta para los elementos de la matriz es ", resta;
+			7: Limpiar Pantalla
+				escribir "Ingresa el numero de filas de la matriz A"
+				Leer f;
+				Escribir "Ingresa el numero de columnas de la matriz A"
+				Leer c;
+				Dimension matriza[f,c]
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						Escribir "Ingresa un  numero en la fila " ,a, " columna " b;
+						Leer matriza(a,b);
+					FinPara
+				FinPara
+				escribir "Ingresa el numero de filas de la matriz B"
+				Leer f;
+				Escribir "Ingresa el numero de columnas de la matriz B"
+				Leer c;
+				Dimension matrizb[f,c]
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						Escribir "Ingresa un  numero en la fila " ,a, " columna " b;
+						Leer matrizb(a,b);
+					FinPara
+				FinPara
+				escribir "Los valores de la matriz A son:"
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						Escribir "[", matriza[a,b], "]" Sin Saltar
+					FinPara
+					Escribir " ";
+				FinPara
+				escribir "Los valores de la matriz B son:"
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						Escribir "[", matrizb[a,b], "]" Sin Saltar
+					FinPara
+					Escribir " ";
+				FinPara
+				Dimension matrizr[f,c]
+				Escribir "La suma de la matriz A + B es: "
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						matrizr[a,b] = matriza[a,b] + matrizb[a,b];
+						Escribir "[", matrizr[a,b], "]" Sin Saltar
+					FinPara
+					Escribir " ";
+				FinPara
+			8: Limpiar Pantalla
+				escribir "Ingresa el numero de filas de la matriz A"
+				Leer f;
+				Escribir "Ingresa el numero de columnas de la matriz A"
+				Leer c;
+				Dimension matriza[f,c]
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						Escribir "Ingresa un  numero en la fila " ,a, " columna " b;
+						Leer matriza(a,b);
+					FinPara
+				FinPara
+				escribir "Ingresa el numero de filas de la matriz B"
+				Leer f;
+				Escribir "Ingresa el numero de columnas de la matriz B"
+				Leer c;
+				Dimension matrizb[f,c]
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						Escribir "Ingresa un  numero en la fila " ,a, " columna " b;
+						Leer matrizb(a,b);
+					FinPara
+				FinPara
+				escribir "Los valores de la matriz A son:"
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						Escribir "[ ", matriza[a,b], "]" Sin Saltar
+					FinPara
+					Escribir " ";
+				FinPara
+				escribir "Los valores de la matriz B son:"
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						Escribir "[ ", matrizb[a,b], "]" Sin Saltar
+					FinPara
+					Escribir " ";
+				FinPara
+				Dimension matrizr[f,c]
+				Escribir "La resta de la matriz A + B es: "
+				para a=1 hasta f Con Paso 1 Hacer
+					para b=1 Hasta c Con Paso 1 Hacer
+						matrizr[a,b] = matriza[a,b] - matrizb[a,b];
+						Escribir "[ ", matrizr[a,b], "]" Sin Saltar
+					FinPara
+					Escribir " ";
+				FinPara
+			9: Limpiar Pantalla
+				escribir "De que altura quieres tu triangulo"
+				leer altura
+				para i = 1 hasta altura Con Paso 1 Hacer
+					j <- -1 + (i * 2)
+					Repetir
+						Escribir Sin Saltar j, " "
+						j <- j - 2
+					Hasta Que j <= -1
+					Escribir "";
+				FinPara
+			10: Limpiar Pantalla
+				Escribir "¿De que altura quieres el cuadrado?"
+				leer altura;
+				para a=0 Hasta altura -1 con paso 1 Hacer
+					para b =0 Hasta altura -1 con paso 1 Hacer
+						si ((b = 0) o (b = altura-1) o (a = 0) o (a = altura-1)) Entonces
+							escribir Sin Saltar"* ";
+						SiNo escribir Sin Saltar "  "
+						FinSi
+					FinPara
+					Escribir "";
+				FinPara
+				escribir ""	
+		FinSegun
+	Hasta Que opc=11;
+FinAlgoritmo
+
+```
