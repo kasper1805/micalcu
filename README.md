@@ -1,6 +1,8 @@
 # Calculadora en Pseint kasper
 Esta es una documentacion de una calculadora en Pseint
+
 Como primer punto necestiamos mostrarle al usuario la serie de opciones que el programa puede ofrecerle
+
 ![captura 1](https://raw.githubusercontent.com/kasper1805/micalcu/main/captura%201.png))
 
 El programa nos perminte realizar diferntes opciones
